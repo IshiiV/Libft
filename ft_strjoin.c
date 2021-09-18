@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 15:44:24 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/04 15:44:25 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 08:15:30 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s1 || !s2)
 		return (NULL);
 	str = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!str)
+		return (NULL);
 	count_s1 = 0;
 	while (s1[count_s1] != '\0')
 	{

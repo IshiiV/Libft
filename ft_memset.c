@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 15:55:27 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/04 16:13:57 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 07:29:06 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t	aux;
 
-	if (!s)
-		return (NULL);
 	aux = 0;
 	while (aux < n)
 	{

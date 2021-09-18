@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 18:02:42 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/16 11:40:53 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 08:53:54 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*char_to_str(const char c)
 	char	*aux;
 
 	aux = malloc(sizeof(char) * 2);
+	if (!aux)
+		return (NULL);
 	aux[0] = c;
 	aux[1] = '\0';
 	return (aux);
@@ -99,16 +101,12 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	if (ft_strncmp(s, "", 1) == 0)
-	{
-		split = malloc(sizeof(char *));
-		split[0] = NULL;
-		return (split);
-	}
 	aux = char_to_str(c);
+	if (!aux)
+		return (NULL);
 	str_trim = ft_strtrim(s, aux);
 	free (aux);
-	if (ft_strncmp(str_trim, "", 1) == 0)
+	if (ft_strncmp(str_trim, "", 1) == 0 || ft_strncmp(s, "", 1) == 0)
 	{
 		split = malloc(sizeof(char *));
 		split[0] = NULL;

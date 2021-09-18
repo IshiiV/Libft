@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 20:40:57 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/04 13:35:49 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 08:39:51 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_itoa(int n)
 
 	number_size = numlen(n);
 	number = malloc(number_size + 1);
+	if (!number)
+		return (NULL);
 	if (n < 0)
 		number[0] = '-';
 	number[number_size] = '\0';

@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 18:03:15 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/04 16:13:34 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 07:36:14 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	if (!dest)
+	if (!dest && !src)
 		return (NULL);
 	if (src < dest)
 	{

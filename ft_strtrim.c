@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 13:30:32 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/16 12:35:51 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 08:15:55 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_calloc(1, 1));
 	end = strtrim_end(s1, set);
 	strtrim = malloc(sizeof(char) * (end - start + 1 + 1));
+	if (!strtrim)
+		return (NULL);
 	count = 0;
 	while (count != end + 1 - start)
 	{

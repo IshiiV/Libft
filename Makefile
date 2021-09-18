@@ -6,7 +6,7 @@
 #    By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 14:19:00 by vishii            #+#    #+#              #
-#    Updated: 2021/09/18 06:29:08 by vishii           ###   ########.fr        #
+#    Updated: 2021/09/18 08:55:38 by vishii           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 
 NAME = libft.a
 
-CC = gcc
+CC = clang
 
 RM = rm -f
 

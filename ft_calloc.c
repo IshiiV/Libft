@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 01:56:05 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/04 13:28:14 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 08:12:10 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t	total;
+	void	*aux;
 
-	total = nmemb * size;
-	return (ft_memset(malloc(total), 0, total));
+	aux = malloc(nmemb * size);
+	if (aux == NULL)
+		return (NULL);
+	return (ft_memset(aux, 0, nmemb * size));
 }

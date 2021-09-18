@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 12:39:34 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/04 15:54:18 by vishii           ###   ########.fr       */
+/*   Updated: 2021/09/18 08:41:18 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (ft_strdup(s));
 	count = 0;
 	string = ft_strdup(s);
+	if (!string)
+		return (NULL);
 	while (s[count] != '\0')
 	{
 		string[count] = f(count, s[count]);
