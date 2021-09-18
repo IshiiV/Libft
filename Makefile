@@ -6,7 +6,7 @@
 #    By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 14:19:00 by vishii            #+#    #+#              #
-#    Updated: 2021/09/18 05:26:45 by vishii           ###   ########.fr        #
+#    Updated: 2021/09/18 06:29:08 by vishii           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,7 @@ bonus:	${NAME} ${OBJS_BONUS}
 all:		${NAME}
 
 clean:	
-			${RM} ${OBJS}
+			${RM} ${OBJS} ${OBJS_BONUS}
 
 fclean:	clean
 			${RM} ${NAME}
