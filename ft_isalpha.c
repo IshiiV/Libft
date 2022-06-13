@@ -6,11 +6,11 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 14:18:31 by vishii            #+#    #+#             */
-/*   Updated: 2021/08/22 10:02:50 by vishii           ###   ########.fr       */
+/*   Updated: 2022/06/13 07:29:40 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int	i)
+int	ft_isalpha(int i)
 {
 	return ((i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z'));
 }

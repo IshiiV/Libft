@@ -6,11 +6,11 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 14:21:55 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/18 07:42:52 by vishii           ###   ########.fr       */
+/*   Updated: 2022/06/13 07:29:38 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int	i)
+int	ft_isalnum(int i)
 {
 	return ((i >= 'a' && i <= 'z')
 		|| (i >= 'A' && i <= 'Z')

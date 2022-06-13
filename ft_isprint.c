@@ -6,11 +6,11 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 14:39:55 by vishii            #+#    #+#             */
-/*   Updated: 2021/08/22 10:08:04 by vishii           ###   ########.fr       */
+/*   Updated: 2022/06/13 07:29:46 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int	i)
+int	ft_isprint(int i)
 {
 	return (i >= 32 && i <= 126);
 }
