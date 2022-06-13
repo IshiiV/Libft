@@ -6,7 +6,7 @@
 /*   By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 14:19:17 by vishii            #+#    #+#             */
-/*   Updated: 2021/09/18 05:59:02 by vishii           ###   ########.fr       */
+/*   Updated: 2022/06/13 06:51:43 by vishii           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
+char	*ft_utoa(unsigned int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_split(char const *s, char c);
 

@@ -6,7 +6,7 @@
 #    By: vishii <vishii@student.42sp.org.br>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 14:19:00 by vishii            #+#    #+#              #
-#    Updated: 2021/09/18 08:55:38 by vishii           ###   ########.fr        #
+#    Updated: 2022/06/13 06:51:05 by vishii           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,7 @@ SRCS =	ft_isalpha.c	\
 			ft_putstr_fd.c	\
 			ft_putendl_fd.c	\
 			ft_putnbr_fd.c	\
+			ft_utoa.c
 
 SRCS_BONUS =	ft_lstnew.c	\
 					ft_lstadd_front.c	\
